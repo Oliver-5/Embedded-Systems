@@ -18,22 +18,57 @@ int main()
     while (buttons.BlueButton == 0);
     
     //Repeat everything "forever" (until the power is removed or the chip is reset)
-    while (true)
+
+    for ( int i = 0; i < 3; i++ )
     {
+    
         //On for 500ms
         greenLED = 1;
         buzz.playTone("C");
-        wait_us(WAIT_TIME_MS * 1000);  //500ms
+        wait_us(WAIT_TIME_MS * 150);  //500ms
 
 
         //Off for 500ms
         greenLED = 0;
-        buzz.playTone("C", Buzzer::HIGHER_OCTAVE);
-        wait_us(WAIT_TIME_MS * 1000);  //500ms
-
-        //Pause
         buzz.rest();
-        wait_us(WAIT_TIME_MS * 1000);
-
+        wait_us(WAIT_TIME_MS * 300);  //500ms
     }
+
+//Off for 500ms
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 500);  //500ms
+
+for ( int i = 0; i < 3; i++ )
+{
+        //On for 500ms
+        greenLED = 1;
+        buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 450);  //500ms
+
+
+        //Off for 500ms
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);  //500ms
+    }
+
+//Off for 500ms
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 500);  //500ms
+
+for ( int i = 0; i < 3; i++ )
+{ 
+        //On for 500ms
+        greenLED = 1;
+        buzz.playTone("C");
+        wait_us(WAIT_TIME_MS * 150);  //500ms
+
+
+        //Off for 500ms
+        greenLED = 0;
+        buzz.rest();
+        wait_us(WAIT_TIME_MS * 300);  //500ms
+        }
 }
