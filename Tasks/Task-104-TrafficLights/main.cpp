@@ -12,10 +12,10 @@ LCD_16X2_DISPLAY lcd;
 
 int main()
 {
-    while(true) {
-
+    while(true) 
+    {
     red = 1;
-    lcd.puts("RED");
+    lcd.puts("Red");
     wait_us(10000000);
 
     amber = 1;
