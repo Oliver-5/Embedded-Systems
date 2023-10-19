@@ -1,12 +1,14 @@
 #include "mbed.h"
 
 DigitalIn ButtonA(PG_0); //Button A
+DigitalIn ButtonB(PG_1); //Button B
 DigitalOut redLED(PC_2); //Red Traffic 1
 
 // main() runs in its own thread in the OS
 int main()
 {
     int btnA;
+    int btnB;
     // Turn OFF the red LED
     redLED = 0;
 
