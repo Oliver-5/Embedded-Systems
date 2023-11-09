@@ -43,20 +43,22 @@ int main()
         disp = count;
         
         //Wait for button A
-        while (buttonA == 0) {
-        } 
-
-        if (count > 0 ) {
-            count -= 1;
+        while (buttonA == 1) {
+        
+        if (count < 99 ) {
+            count = count + 1;
+            disp = count;
+        }
         }
 
         //Wait for button B
-        while (buttonB == 0) {
-        }
+        while (buttonB == 1) {
 
-        if (count < 99 ) {
-            count += 1;
+        if (count > 0 ) {
+            count = count - 1;
+            disp = count;
         } 
+        }
 
         //Reset condition
         if ((buttonA == 1) && (buttonB == 1)) {

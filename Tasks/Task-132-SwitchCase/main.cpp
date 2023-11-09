@@ -57,10 +57,18 @@ int main()
             greenLED = !greenLED;
             break;
 
-            case 5:
-            redLED  = 0;
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            redLED  = !redLED;
             yellowLED = !yellowLED;
             greenLED = !greenLED;
+            break;
 
             default:
             //All others

@@ -1,10 +1,25 @@
 #include "mbed.h"
 
-int a = 3;
 
-int main ()
+int main(void)
 {
-  if (a == 4)
-  printf("four ");
-  printf("three\n");
+
+  char ch = 66;
+
+  switch(ch)
+  {
+    case 'A':
+      printf("%i is an A", ch);
+      break;
+    case 'B':
+      printf("%i is a B", ch);;
+      break;
+    case 'C':
+      printf("%i is a C", ch);;
+      break;
+    default:
+      printf("Error");
+  }
+
+  return 0;
 }
