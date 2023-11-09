@@ -24,7 +24,7 @@ int main()
             btnB = ButtonB; //Read button A
             btnC = ButtonC;
             btnD = ButtonD;
-        } while (btnA == 1 && btnB == 1 && btnC == 1 && btnD == 1);
+        } while (btnA == 1 || btnB == 1 || btnC == 1 || btnD == 1);
 
 
         //Toggle the red LED
@@ -39,7 +39,7 @@ int main()
             btnB = ButtonB;
             btnC = ButtonC;
             btnD = ButtonD; //Read button A
-        } while (btnA == 0 && btnB == 0 && btnC == 0 && btnD == 0);
+        } while (btnA == 0 || btnB == 0 || btnC == 0 || btnD == 0);
 
         //Wait for noise to settle
         wait_us(10000);
