@@ -1,16 +1,25 @@
 #include "mbed.h"
 
-DigitalOut myLED(LED1);
-int main(){
 
-while (1)
+int main(void)
 {
-    myLED = 1;
 
-wait_us(2000000);
+  char ch = 66;
 
-myLED.write(0);
+  switch(ch)
+  {
+    case 'A':
+      printf("%i is an A", ch);
+      break;
+    case 'B':
+      printf("%i is a B", ch);;
+      break;
+    case 'C':
+      printf("%i is a C", ch);;
+      break;
+    default:
+      printf("Error");
+  }
 
-wait_us(2000000);
-}
+  return 0;
 }
